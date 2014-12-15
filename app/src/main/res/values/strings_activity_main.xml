@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="btRegister">ثبت نام در مسابقه</string>
+    <string name="btStart">شروع بازی</string>
+    <string name="btHelp">راهنما</string>
+    <string name="btExit">خروج</string>
+    <string name="msg_exit">برای خروج از بازی دکمه بازگشت را مجدا فشار دهید.</string>
+    <string name="powered">تولید شده توسط: </string>
+    <string name="dialog_place_title">اطلاعات محل</string>
+    <string name="about">این بازی به سفارش <b>مدیریت توسعه گردشگری شهرداری تهران</b> تولید شده است.\n
+        \n
+        وب سایت رسمی:www.ganjetehran.com</string>
+    <string name="dialog_answer_title">تأیید پاسخ</string>
+    <string name="dialog_answer_text1">آیا از انتخاب گزینه </string>
+    <string name="dialog_answer_text2">اطمینان دارید؟ درصورت تأیید امکان تغییر نخواهید داشت.</string>
+    <string name="dialog_answer_confirm">ثبت گزینه</string>
+    <string name="dialog_answer_back">تجدید نظر</string>
+    <string name="dialog_deal_title">شرکت در قرعه کشی</string>
+    <string name="dialog_deal_text1">ضمن تبریک، شما موفق شدید کلیه سوالات مرحله</string>
+    <string name="dialog_deal_text2">را پاسخ دهید. جهت شرکت در قرعه کشی این مرحله باید پاسخهای ثبت شده را از طریق پیامک ارسال نمایید.</string>
+
+</resources>

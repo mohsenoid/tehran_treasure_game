@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitmap_bg_main"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/personalInfoScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|top"
+                    android:text="@string/tvRegister"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvRegisterDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/tvDetails"
+                    android:textSize="15sp" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="top|right"
+                        android:weightSum="100">
+
+                        <EditText
+                            android:id="@+id/etFname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="@string/tvFnameHint"
+                            android:inputType="textPersonName"
+                            android:maxLength="50"
+                            android:textColorHint="@color/hint" />
+
+                        <TextView
+                            android:id="@+id/tvFname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="@string/tvFname"
+                            android:textColor="@color/text" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="100">
+
+                        <EditText
+                            android:id="@+id/etLname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="@string/tvLnameHint"
+                            android:inputType="textPersonName"
+                            android:maxLength="100"
+                            android:textColorHint="@color/hint" />
+
+                        <TextView
+                            android:id="@+id/tvLname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="@string/tvLname"
+                            android:textColor="@color/text" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/TableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="100">
+
+                        <View
+                            android:id="@+id/View01"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50" />
+
+                        <EditText
+                            android:id="@+id/etMelliCode"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textColorHint="@color/hint" />
+
+                        <TextView
+                            android:id="@+id/tvMelliCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="@string/tvMelliCode"
+                            android:textColor="@color/text" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="100">
+
+                        <RadioGroup
+                            android:id="@+id/rgSex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <RadioButton
+                                android:id="@+id/rbMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:checked="true"
+                                android:text="@string/rdMale" />
+
+                            <RadioButton
+                                android:id="@+id/rbFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:text="@string/rdFemale" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/tvSex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="@string/tvSex"
+                            android:textColor="@color/text" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/TableRow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="100">
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50" />
+
+                        <EditText
+                            android:id="@+id/etBirthYear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:hint="@string/etBirthYearHint"
+                            android:inputType="number"
+                            android:maxLength="100"
+                            android:textColorHint="@color/hint" />
+
+                        <TextView
+                            android:id="@+id/tvBirthYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/tvBirthYear"
+                            android:textColor="@color/text" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="100">
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100"
+                            android:ems="10"
+                            android:gravity="left"
+                            android:inputType="text|textEmailAddress|textAutoComplete"
+                            android:maxLength="100"
+                            android:textColorHint="@color/hint" />
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/tvEmail"
+                            android:textColor="@color/text" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_ic_action_start"
+            android:onClick="onClick"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/btSendSMS" />
+    </LinearLayout>
+
+</RelativeLayout>

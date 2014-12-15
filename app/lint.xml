@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ExtraTranslation" severity="informational" />
+    <issue id="MissingTranslation" severity="informational" />
+    <issue id="ProtectedPermissions" severity="informational" />
+</lint>

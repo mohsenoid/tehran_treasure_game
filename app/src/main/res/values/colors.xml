@@ -1,0 +1,21 @@
+<resources>
+
+    <color name="theme1">#310101</color>
+    <color name="theme2">#370a0a</color>
+    <color name="theme3">#260404</color>
+    <color name="theme4">#8E0406</color>
+    <color name="theme5">#55260404</color>
+    <color name="theme6">#558E0406</color>
+    <color name="text">#fff</color>
+    <color name="textCount">#000</color>
+    <color name="textTotal">#f00</color>
+    <color name="hint">#aaa</color>
+    <color name="textInvoiceHeader">#000</color>
+    <color name="main_menu_button">#edd693</color>
+    <color name="main_menu_textview">#000</color>
+    <color name="registry_title">#edd693</color>
+    <color name="registry_button">#edd693</color>
+    <color name="food_order_button">#edd693</color>
+    <color name="food_row_category">#edd693</color>
+
+</resources>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitmap_bg_main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgHeaderMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:onClick="onClick"
+            android:src="@drawable/header_main" />
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <Button
+                android:id="@+id/btStart"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_ic_action_start"
+                android:onClick="onClick"
+                android:tag="1"
+                android:text="@string/btStart"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btHelp"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_ic_action_help"
+                android:onClick="onClick"
+                android:tag="2"
+                android:text="@string/btHelp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btExit"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_ic_action_exit"
+                android:onClick="onClick"
+                android:tag="3"
+                android:text="@string/btExit"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.tehran.util.WrappingSlidingDrawer
+            android:id="@+id/sdAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:allowSingleTap="true"
+            android:animateOnClick="true"
+            android:content="@+id/content"
+            android:gravity="bottom"
+            android:handle="@+id/handle">
+
+            <RelativeLayout
+                android:id="@+id/handle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/imgHandle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#0000"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_ic_handle" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/content"
+                layout="@layout/activity_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.tehran.util.WrappingSlidingDrawer>
+    </LinearLayout>
+
+</RelativeLayout>

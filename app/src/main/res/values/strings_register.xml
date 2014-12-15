@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_register">ثبت نام بازی گنج تهران</string>
+    <string name="tvRegister"><b>فرم ثبت نام در بازی گنج تهران</b></string>
+    <string name="tvDetails">با توجه به <b>قرعه کشی</b> و نیاز به اطلاعات <b>دقیق شناسنامه ای</b> ،لطفا در تکمیل فرم ثبت نام بازی دقت نموده و از حروف فارسی استفاده نمایید.</string>
+    <string name="tvFname">نام: </string>
+    <string name="tvFnameHint">لطفا فارسی تایپ نمایید</string>
+    <string name="tvLname">نام خانوادگی: </string>
+    <string name="tvLnameHint">لطفا فارسی تایپ نمایید</string>
+    <string name="tvSex">جنسیت: </string>
+    <string name="rdMale">مرد</string>
+    <string name="rdFemale">زن</string>
+    <string name="tvMelliCode">کد ملی: </string>
+    <string name="tvPhone">تلفن تماس: </string>
+    <string name="tvPhoneCode">کد:</string>
+    <string name="etPhoneCodeHint">021</string>
+    <string name="tvEmail">آدرس ایمیل: </string>
+    <string name="btSendSMS">ارسال اطلاعات ثبت نام از طریق پیامک</string>
+    <string name="progress_title">پیامک</string>
+    <string name="progress_text">درحال ارسال اطلاعات، لطفا منتظر بمانید&#8230;</string>
+    <string name="tvBirthYear">سال تولد:</string>
+    <string name="etBirthYearHint">1363</string>
+    <string name="strDialogRegPerInfoErrorText">لطفا پیش از ارسال فرم ثبت نام موارد ذیل را تکمیل و یا اصلاح نمایید:</string>
+    <string name="strRegFormFnameError">لطفا نام خود را  وارد نمایید</string>
+    <string name="strRegFormLnameError">لطفا نام خانوادگی خود را وارد نمایید</string>
+    <string name="strRegFormMelliCodeError">لطفا کد ملی خود را وارد نمایید</string>
+    <string name="strRegFormMelliCodeError2">لطفا کد ملی خود را صحیح وارد نمایید</string>
+    <string name="strRegFormPhoneCodeError">لطفا کد تلفن تماس خود را وارد نمایید</string>
+    <string name="strRegFormPhoneCodeError2">لطفا کد تلفن تماس خود را صحیح وارد نمایید</string>
+    <string name="strRegFormPhoneNoError">لطفا تلفن تماس خود را وارد نمایید</string>
+    <string name="strRegFormPhoneNoError2">لطفا تلفن تماس خود را صحیح وارد نمایید</string>
+    <string name="strRegFormEmailError">آدرس ایمیل وارد شده صحیح نیست. ضمنا تکمیل این فیلد اجباری نمی باشد</string>
+    <string name="strRegFormBirthYearError">لطفا سال تولد خود را وارد نمایید</string>
+    <string name="strRegFormBirthYearError2">لطفا سال تولد خود را صحیح وارد نمایید</string>
+
+    <string name="registration_sent">ثبت نام شما با موفقیت انجام شد.</string>
+    <string name="registration_sent_title">تکمیل ثبت نام</string>
+    <string name="sms_error">خطا در ارسال پیامک حاوی اطلاعات، لطفا پس از بررسی مجددا تلاش نمایید.</string>
+    <string name="sms_error_title">خطای ثبت نام</string>
+    <string name="retry">ارسال مجدد</string>
+    <string name="back">بازگشت</string>
+    <string name="send">ارسال</string>
+    <string name="sms_confirm">آیا از ارسال اطلاعات ثبت نام خود از طریق پیامک اطمینان دارید؟</string>
+    <string name="sms_confirm_title">ارسال اطلاعات</string>
+    <string name="exit">خروج</string>
+
+</resources>

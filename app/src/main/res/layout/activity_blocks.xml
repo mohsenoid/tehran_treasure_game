@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bitmap_bg_blocks"
+    android:orientation="vertical"
+    tools:context=".BlocksActivity">
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/header_blocks" />
+
+    <ScrollView
+        android:id="@+id/svBlocks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tlBlocks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bitmap_bg_footer"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvAnswersCountLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvAnswersCount"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvAnswersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvAnswersCountLable"
+            android:text="0"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btDeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_action_start"
+            android:text="@string/btDeal" />
+    </RelativeLayout>
+
+</LinearLayout>

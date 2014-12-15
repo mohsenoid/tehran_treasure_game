@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="animtime">300</integer>
+    <integer name="connectionTimeout">10000</integer>
+
+    <integer-array name="finishLines">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+    </integer-array>
+    <integer-array name="dealPoints">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+    </integer-array>
+
+</resources>

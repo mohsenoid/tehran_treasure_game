@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="qrcode_title">نصب اسکنر بارکد?</string>
+    <string name="qrcode_message">این نرم افزار به اسکنر بارکد نیاز دارد. آیا نصب شود؟</string>
+    <string name="qrcode_yes">بلی</string>
+    <string name="qrcode_no">خیر</string>
+    <string name="qrism_code">Treasure-Code: </string>
+    <string name="invalid_qrcode">این بارکد مربوط به بازی گنج تهران تیست.</string>
+    <string name="invalid_barcode">اطلاعاتی دریافت نشد.</string>
+    <string name="wrong_qrcode_key">این بارکد متعلق به بلوک انتخاب شده نیست.</string>
+
+</resources>
